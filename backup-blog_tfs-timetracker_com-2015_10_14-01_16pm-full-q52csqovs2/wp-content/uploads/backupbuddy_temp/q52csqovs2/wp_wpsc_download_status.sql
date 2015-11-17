@@ -1,0 +1,3 @@
+CREATE TABLE `wp_wpsc_download_status` (  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  `product_id` bigint(20) unsigned DEFAULT NULL,  `fileid` bigint(20) unsigned NOT NULL DEFAULT '0',  `purchid` bigint(20) unsigned NOT NULL DEFAULT '0',  `cartid` bigint(20) unsigned DEFAULT NULL,  `uniqueid` varchar(64) DEFAULT '',  `downloads` int(11) NOT NULL DEFAULT '0',  `ip_number` varchar(255) NOT NULL DEFAULT '',  `active` varchar(1) NOT NULL DEFAULT '0',  `datetime` datetime NOT NULL,  PRIMARY KEY (`id`),  UNIQUE KEY `uniqueid` (`uniqueid`),  KEY `product_id` (`product_id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40000 ALTER TABLE `wp_wpsc_download_status` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wp_wpsc_download_status` ENABLE KEYS */;

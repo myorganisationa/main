@@ -1,0 +1,3 @@
+CREATE TABLE `wp_wpsc_claimed_stock` (  `product_id` bigint(20) unsigned NOT NULL DEFAULT '0',  `variation_stock_id` bigint(20) unsigned NOT NULL DEFAULT '0',  `stock_claimed` float NOT NULL,  `last_activity` datetime NOT NULL,  `cart_id` varchar(255) NOT NULL DEFAULT '0',  `cart_submitted` varchar(1) NOT NULL DEFAULT '0',  UNIQUE KEY `unique_key` (`product_id`,`variation_stock_id`,`cart_id`),  KEY `last_activity` (`last_activity`),  KEY `cart_submitted` (`cart_submitted`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40000 ALTER TABLE `wp_wpsc_claimed_stock` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wp_wpsc_claimed_stock` ENABLE KEYS */;

@@ -1,0 +1,529 @@
+/*
+Theme Name: MuseExport Blog WordPress theme
+Theme URI: http://www.museexport.com
+Author: Jesmin Akter
+Author URI: https://jesmincms.com/
+Description: This is a simple WordPress Blog theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: museexport
+*/
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.clear{
+	clear: both;
+}
+.alignleft{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.alignright{
+	float:right;
+	margin-left: 10px;
+	margin-bottom: 10px
+}
+.aligncenter{
+	text-align: center;
+}
+a{
+	color: #0080CE;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.floatleft{
+	float: left;
+}
+.floatright{
+	float: right;
+}
+
+.post_content > ul {
+  margin-left: 15px;
+}
+#header{
+	padding: 29px 0px;
+	background: #37332F;
+	overflow: hidden;
+}
+.container{
+	width: 964px;
+	margin: 0 auto;
+}
+.logo{
+	width: 50%
+}
+.header_right{
+	width: 50%
+}
+.header_right p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 9px;
+  text-align: right;
+}
+/* End header */
+.main_wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 964px;
+  position: relative;
+}
+.main_content {
+  margin-right: 20px;
+  margin-top: 44px;
+  width: 718px;
+}
+
+.single_blog_post{
+	background: #f2f2f2;
+	padding: 14px;
+	margin-bottom: 17px;
+	overflow: hidden;
+}
+.single_blog_post:last-child{
+	margin-bottom: 60px;
+}
+.post_head h2{
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.post_head span, .single_page_details{
+    line-height: 13px;
+    padding-bottom: 23px;
+    display: block;
+    font-size: 11px;
+}
+.single_page_details{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.post_content h1{
+	padding: 0 0 15px;
+	line-height: 36px;
+	font-size: 30
+}
+.post_content p, .post_content {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 0 10px;
+}
+.more-link {
+  display: block;
+  font-size: 11px;
+  line-height: 19px;
+  margin-top: 10px;
+}
+.next_prev_post a{
+	font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 10px;
+    color:#000;
+}
+/* End content area */
+
+/* Start sidebar */
+.sidebar {
+  padding-left: 15px;
+  padding-top: 136px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  z-index: 99999;
+  background: none repeat scroll 0 0 #0080ce;
+  width: 210px;
+}
+.single_sidebar{
+	margin-bottom: 30px
+}
+.single_sidebar h2{
+	color: #fff;
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 22px
+}
+.single_sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.single_sidebar ul li{}
+.single_sidebar ul li a{
+	color: #fff;
+    line-height: 21px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.single_sidebar ul li a:hover{}
+/* End sidebar styles */
+
+/* Start Archive head */
+.archive_head {
+  background: none repeat scroll 0 0 #0080ce;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-right: -40px;
+  overflow: hidden;
+  padding: 17px 40px 17px 17px;
+}
+.archive_head h1{
+	display: inline;
+	float: left;
+    font-size: 24px;
+    line-height: 29px;
+}
+.archive_head a{
+	color: #fff;
+	float: right;
+	display: inline-block;
+}
+/* End archive page */
+/* Start single page */
+
+.next_prev_post span .prev{
+	width: 50%
+}
+.next_prev_post span .next{
+	width: 50%
+}
+
+
+
+/* End single page */
+
+/* 404 page */
+.error_page{
+	text-align: center;
+	margin: 100px auto;
+}
+.error_page h1{
+	text-align: center;
+	color:#E33331;
+	font-size: 50px;
+	text-shadow:1px 0px 0px #272822;
+}
+
+/* Start Footer Styles */
+footer{
+	padding: 20px 0px;
+	background: #1B1B1B;
+	overflow: hidden;
+}
+footer p{
+	color: #999999;
+	margin: 0px!important;
+    font-size: 12px;
+    line-height: 14px;
+}
+footer p a{
+	color:#fff;
+}
+
+/* Some fixes */
+.sidebar_rel {
+  overflow: hidden;
+  position: relative;
+}
+.sidebar_bg{
+	background: #0080CE;
+	right: 0;
+	height: 100%;
+	width: 30%;
+	top: 0;
+	position: absolute;
+	z-index: 99;
+}
+
+
+
+/* Pagination CSS */
+.navigation {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.navigation > ul {
+  text-align: center;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration:none;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
+  background-color: #6fb7e9;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 12px;
+  display: inline-block;
+
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: #3C8DC5;
+}
+
+
+
+
+/* Fix responsive elements */
+
+/* For Tablet landscape (1024x768) */
+@media (min-width: 768px) and (max-width: 1199px) { 
+.sidebar_bg {
+  display: block;
+  width: 10%;
+}
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.container {
+  width: 750px;
+}
+.main_wrapper {
+  margin-left: 2%;
+  width: 98%;
+}
+.main_content {
+  width: 580px;
+}
+.sidebar {
+  width: 167px;
+}
+}
+
+
+@media screen and (max-width:980px){
+.container {
+  width: 950px;
+}
+.main_content {
+  width: 670px;
+}
+.sidebar {
+  width: 254px;
+}
+}
+
+
+@media screen and (max-width:800px){
+.container {
+  width: 750px;
+}
+.sidebar {
+  width: 210px;
+}
+.main_content {
+  width: 538px;
+}
+}
+
+@media screen and (max-width:768px){
+.container{
+  width: 720px;
+}
+.main_content {
+width: 535px;
+}
+.sidebar {
+  width: 200px;
+}
+.main_content {
+  width: 502px;
+}
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+#header {
+  padding: 15px 0;
+}
+.logo {
+  padding: 2%;
+  width: 35%;
+}
+.header_right {
+  width: 42%;
+}
+.header_right p {
+  font-size: 7px;
+  padding-right: 6px;
+  text-align: right;
+}
+.post_head h2 {
+  font-size: 9px;
+  padding: 5px 0;
+}
+.post_content h1 {
+  font-size: 10px;
+  line-height: 10px;
+}
+.post_content p, .post_content {
+  font-size: 7px;
+  line-height: 12px;
+  padding: 0 0 5px;
+}
+.read_more{
+  font-size: 6px;
+  line-height: 10px;
+}
+#footer .logo {
+  padding: 2%;
+  width: 70%;
+}
+footer p{
+    font-size: 6px;
+    line-height: 10px;
+}
+#footer .header_right {
+  width: 20%;
+}
+.post_head span, .single_page_details {
+  font-size: 6px;
+  line-height: 8px;
+  padding-bottom: 15px;
+}
+
+.container {
+  width: 100%;
+}
+.main_wrapper {
+  width: 100%;
+}
+.sidebar {
+  padding-top: 70px;
+}
+.sidebar_bg{
+  display: none;
+}
+.main_content {
+  width: 70%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+.sidebar {
+  width: 22%;
+  padding-left: 5px;
+  float: left;
+}
+.single_blog_post{
+  padding: 8px
+}
+.single_sidebar h2 {
+  font-size: 10px;
+  line-height: 10px;
+  margin-bottom: 14px;
+}
+.single_sidebar ul li a{
+  font-size: 6px;
+  line-height: 10px
+}
+.archive_head h1{
+  font-size: 10px
+}
+.next_prev_post a {
+  font-size: 7px;
+  line-height: 12px;
+  padding: 0 0 5px;
+}
+.main_content{
+  margin-top: 15px;
+}
+footer{
+  padding: 10px 0;
+}
+.single_blog_post:last-child {
+  margin-bottom: 30px;
+}
+.archive_head {
+  margin-bottom: 15px;
+  margin-right: -40px;
+  padding: 10px 40px 10px 10px;
+}
+.single_page_details {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.archive_head img {
+  margin-top: 6px;
+  width: 15px;
+}
+.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
+  font-size: 6px;
+  padding: 2px 3px;
+}
+.navigation {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.sidebar {
+  padding-left: 5px;
+  float: right;
+}
+.main_content {
+  width: 73%;
+}
+#footer .logo {
+  padding: 2%;
+  width: 78%;
+}
+#footer .header_right {
+  padding: 2%;
+  width: 14%;
+}
+#footer .header_right p {
+  text-align: right;
+}
+}
+
+.innerpage_paginav{
+margin-bottom:20px;
+  margin-top:30px;
+  overflow:hidden;
+}
+
+.innerpage_paginav.next_prev_post a {
+color: #0080CE;
+}
+.innerpage_paginav.next_prev_post a:hover {
+color: #0080CE;
+  text-decoration:underline;
+}

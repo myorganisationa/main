@@ -1,0 +1,3 @@
+CREATE TABLE `wp_wpsc_coupon_codes` (  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  `coupon_code` varchar(255) DEFAULT '',  `value` decimal(11,2) NOT NULL DEFAULT '0.00',  `is-percentage` char(1) NOT NULL DEFAULT '0',  `use-once` char(1) NOT NULL DEFAULT '0',  `is-used` char(1) NOT NULL DEFAULT '0',  `active` char(1) NOT NULL DEFAULT '1',  `every_product` varchar(255) NOT NULL DEFAULT '',  `start` datetime NOT NULL,  `expiry` datetime NOT NULL,  `condition` text,  PRIMARY KEY (`id`),  KEY `coupon_code` (`coupon_code`),  KEY `active` (`active`),  KEY `start` (`start`),  KEY `expiry` (`expiry`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40000 ALTER TABLE `wp_wpsc_coupon_codes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wp_wpsc_coupon_codes` ENABLE KEYS */;
